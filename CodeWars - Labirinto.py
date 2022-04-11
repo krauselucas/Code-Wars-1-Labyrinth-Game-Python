@@ -9,6 +9,7 @@ Tamara Passos'''
 import random
 import queue
 import copy
+from time import sleep
 
 # O critério utilizado para saber se o labirinto é válido ou não foi:
 # Se o robô volta para o início, o labirinto é descartado.
@@ -293,7 +294,7 @@ while True:
       x , y = andar_pra_tras
       labirinto[y][x] = 'X'
 
-
+  sleep(0.7)
   for lista in labirinto:
     for posicao in lista:
         print(posicao, end=' ')
